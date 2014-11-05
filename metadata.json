@@ -1,0 +1,6 @@
+{
+ "uuid": "monitormover@greenwoodj",
+ "name": "Monitor Mover",
+ "description": "A simple applet to setup a hotkey to move windows to a different monitor.",
+ "icon": "preferences-desktop"
+}
