@@ -95,13 +95,9 @@ MyApplet.prototype = {
         } else {
             this.set_applet_label(_("Hi there!"));
         }
-
-        let icon_file = Gio.File.new_for_path(this.icon_name);
-        if (icon_file.query_exists(null)) {
-            this.set_applet_icon_path(this.icon_name)
-        } else {
-            this.set_applet_icon_name(this.icon_name)
-        }
+        
+//        this.set_applet_icon_name( "dual-monitors" )
+        this.set_applet_icon_path( "/home/jeremy/.local/share/cinnamon/applets/monitormover@greenwoodj/dual-monitors.png" )
 
         this.spinner_val_demo.label.clutter_text.set_text("Spinner value is: " + this.spinner_number);
         this.combo_val_demo.label.clutter_text.set_text("Combo value is: " + this.combo_choice);
