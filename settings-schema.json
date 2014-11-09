@@ -6,6 +6,6 @@
  "keybinding-next" : {
     "type" : "keybinding",
     "description" : "Keybinding for next monitor: ",
-    "default" : "<Control>F8"
+    "default" : "<Shift><Super>Right"
  }
 }

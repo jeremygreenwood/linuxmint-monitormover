@@ -1,6 +1,5 @@
 {
  "uuid": "monitormover@greenwoodj",
  "name": "Monitor Mover",
- "description": "A simple applet to setup a hotkey to move windows to a different monitor.",
- "icon": "dual-monitors"
+ "description": "Configures a hotkey to move windows to a different monitor. Developed using Linux Mint 17 (Cinnamon)."
 }
