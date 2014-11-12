@@ -5,6 +5,10 @@ const Mainloop 	= imports.mainloop;
 const Settings 	= imports.ui.settings;
 const Gio 		= imports.gi.Gio;
 const Main 		= imports.ui.main;
+//const WindowManager = imports.ui.windowManager;
+//const Workspace = imports.ui.workspace;
+const WindowUtils = imports.misc.windowUtils;
+
 
 function MyApplet( metadata, orientation, panel_height, instance_id )
 {
@@ -53,6 +57,7 @@ MyApplet.prototype =
         }
     },
 
+
     on_keybinding_changed: function()
     {
         Main.keybindingManager.addHotKey( "must-be-unique-id", this.keybinding, Lang.bind( this, this.on_hotkey_triggered ) );
@@ -64,6 +69,12 @@ MyApplet.prototype =
 
     on_hotkey_triggered: function()
     {
+        global.log( "Entered on_hotkey_triggered()." );
+//        Workspace.moveSelectedWindowToNextMonitor();
+//        Main.layoutManager.primaryIndex.moveSelectedWindowToNextMonitor();
+//        global.log( "Monitor index: " + Workspace.layoutManager.primaryIndex );
+        global.log( "Monitor index: " + WindowUtils. );
+        global.log( "Exiting on_hotkey_triggered()." );
     },
 
     on_applet_clicked: function( event )
