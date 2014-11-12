@@ -16,7 +16,7 @@ MyApplet.prototype =
     __proto__: Applet.TextIconApplet.prototype,
 
     _init: function( metadata, orientation, panel_height, instance_id )
-	{
+    {
         Applet.IconApplet.prototype._init.call( this, orientation, panel_height, instance_id );
 
         this.menuManager = new PopupMenu.PopupMenuManager( this );
@@ -29,14 +29,14 @@ MyApplet.prototype =
         Setup next monitor hotkey binding
         ----------------------------------------------------------*/
         this.settings.bindProperty
-			(
-			Settings.BindingDirection.IN,
-			"keybinding-next",
-			"keybinding",
-			this.on_keybinding_changed,
-			null
-			);
-        
+            (
+            Settings.BindingDirection.IN,
+            "keybinding-next",
+            "keybinding",
+            this.on_keybinding_changed,
+            null
+            );
+
         /*----------------------------------------------------------
         Setup initial applet state
         ----------------------------------------------------------*/
@@ -59,20 +59,20 @@ MyApplet.prototype =
     },
 
     on_settings_changed: function()
-	{
+    {
     },
 
     on_hotkey_triggered: function()
-	{
+    {
     },
 
     on_applet_clicked: function( event )
-	{
+    {
         this.menu.toggle();
     },
 
     on_applet_removed_from_panel: function()
-	{
+    {
         this.settings.finalize();
     }
 };
